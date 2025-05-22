@@ -1,0 +1,101 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+  background-image: url(../img/fondo.png);
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; 
+}
+
+header {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer .social-icons {
+  margin-bottom: 10px;
+}
+
+.footer .social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.footer .social-icons a:hover {
+  color: #1da1f2; /* Cambia de color al pasar el mouse (azul claro) */
+}
+
+#bienvenida {
+  background-color: #e0f7fa;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  transform: translate(0, 60px);
+
+  
+}
+
+#bienvenida h1 {
+  color: black;
+}
+.footer{
+    transform: translate(0 , 550px)
+}
+.logo{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.bien{
+ width: 500px;
+  height: 500px;
+  transform: translate(600px,0);
+}
