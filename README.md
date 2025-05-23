@@ -1,80 +1,79 @@
-Proyecto Web de Fútbol
+# HTML- 2
+## HTML Styles
+### HTML Text Formatting
+ <b> - Bold text
+ <strong>  - Important text
+ <i> - Italic text
+ <em> - Emphasized text
+ <small> - Smaller text
+ <del> - Deleted text
+ <ins> - Inserted text
+ <sub> - Subscript text
+ <sup> - Superscript text
 
-Este repositorio contiene una página web sencilla dedicada al fútbol, con secciones de navegación, estilos, y contenido básico para las páginas: Servicios, Nosotros, Blog, Contacto y una sección de bienvenida.
+ ### Quotation and citation examples
+ <blockquote>,<q>, <abbr title="HyperText Markup Language">, <address>, <cite> and <bdo>
 
----
+ Este código HTML representa una página web llamada "Pasión Futbolera", y está escrita en español. A continuación se explica cada una de sus partes:
 
-# Estructura de Archivos y Carpetas
+Encabezado del documento (<head>):
 
-mi-pagina-web/
-├── index.html
-├── servicios.html
-├── nosotros.html
-├── blog.html
-├── contacto.html
-├── styles/
-│ └── style.css
-└── README.md
+Se declara el tipo de documento como HTML5 con <!DOCTYPE html>.
 
+Se especifica que el idioma es español mediante <html lang="es">.
 
----
+Dentro del <head>, se incluye <meta charset="UTF-8" /> para permitir caracteres especiales (como tildes o eñes).
 
-## Código HTML para las páginas
+La etiqueta <meta name="viewport" content="width=device-width, initial-scale=1.0"/> asegura que el diseño se adapte correctamente a pantallas pequeñas como las de los móviles.
 
-### Servicios (`servicios.html`)
+Se incluye un título de pestaña: <title>Pasion Futbolera</title>.
 
-```html
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Servicios</title>
-  <link rel="stylesheet" href="styles/style.css" />
-</head>
-<body>
-  <header>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="nosotros.html">Nosotros</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+Se importa la biblioteca de íconos Font Awesome para poder usar íconos como correo, teléfono, etc.
 
-  <main>
-    <section>
-      <h1>Servicios</h1>
-      <p>Ofrecemos una amplia gama de servicios diseñados para satisfacer las necesidades de los verdaderos amantes del fútbol. Desde cobertura profesional de eventos deportivos hasta asesorías personalizadas para jugadores y entrenadores.</p>
-    </section>
-  </main>
+Se enlaza un archivo CSS externo ubicado en css/style.css para aplicar estilos visuales a la página.
 
-  <footer>
-    <p>&copy; 2025 Pasión Futbolera</p>
-  </footer>
-</body>
-</html>
+Encabezado visual del sitio (<header>):
 
-###Sección de bienvenida (ejemplo para index.html)
-<section id="bienvenida">
-  <h1>¡Bienvenido a Pasión Futbolera!</h1>
-  <p>En este espacio creado para verdaderos amantes del fútbol, queremos que sientas la emoción del deporte más apasionante del planeta. Desde los goles que hacen historia hasta las jugadas que nos dejan sin aliento, aquí celebramos cada pase, cada táctica y cada victoria como si estuviéramos en la cancha.</p>
-  <p>Nuestro objetivo es acercarte al corazón del juego: te traemos las últimas noticias, análisis profundos de los partidos, perfiles de jugadores legendarios y emergentes, así como historias inspiradoras del fútbol en todo el mundo.</p>
-  <p>Ya seas fanático de tu equipo local, seguidor fiel de las grandes ligas internacionales o simplemente alguien que disfruta del sonido del balón rodando, este es tu lugar. Bienvenido a la comunidad donde el fútbol nunca duerme y la pasión se vive a cada minuto.</p>
-</section>
+Contiene una barra de navegación (<nav>), en la cual hay una lista (<ul>) de enlaces a diferentes secciones del sitio como Inicio, Servicios, Nosotros, Blog y Contacto.
 
-#### transform: translate(x, y)=
-Cómo mover elementos en CSS (ejes X e Y)
+También incluye una imagen del logo (<img src="img/logo.png">) que representa la marca o nombre del sitio web.
 
-###Usando position + top y left
-css
-Copiar
-Editar
-.mi-elemento {
-  position: relative;
-  top: 20px;  /* mueve hacia abajo */
-  left: 50px; /* mueve hacia la derecha */
-}
+Cuerpo principal del contenido (<main>):
+
+Dentro de <main> hay una sección con el ID "bienvenida" que contiene un título de bienvenida en negrita (<strong><b>¡Bienvenido a Pasión Futbolera!</b></strong>).
+
+Luego hay un párrafo que utiliza muchas etiquetas semánticas:
+
+<br> crea un salto de línea.
+
+<i> pone en cursiva la frase “En este espacio”.
+
+<blockquote> resalta la frase “verdaderos amantes del fútbol” como una cita destacada.
+
+<q> agrega una cita corta: “que sientas la emoción”.
+
+<abbr title="HyperText Markup Language"> muestra un texto abreviado y, al pasar el mouse, se ve el significado completo (muy útil para siglas).
+
+<sup> se usa para mostrar una idea secundaria como si estuviera en superíndice, aunque en este caso es más decorativo.
+
+<address> se usa de manera creativa para destacar una frase, aunque técnicamente se recomienda para direcciones o contactos.
+
+<cite> se usa para mencionar una fuente, aunque en este caso se adapta para indicar las “últimas noticias”.
+
+<bdo dir="rtl"> invierte visualmente el orden del texto (de derecha a izquierda).
+
+Después de ese texto se incluye una imagen decorativa de bienvenida con <img src="img/bien.png">.
+
+Pie de página (<footer>):
+
+Contiene una sección con íconos sociales:
+
+Ícono de correo con un enlace para enviar un email: <a href="mailto:..."><i class="fas fa-envelope"></i></a>.
+
+Ícono de teléfono: <a href="tel:..."><i class="fas fa-phone"></i></a>.
+
+Ícono de WhatsApp: <a href="https://wa.me/..."><i class="fab fa-whatsapp"></i></a>.
+
+Ícono de Instagram: <a href="https://www.instagram.com/..."><i class="fab fa-instagram"></i></a>.
+
+Finalmente, una línea de texto con derechos de autor usando &copy; 2025 pasion futbolera
